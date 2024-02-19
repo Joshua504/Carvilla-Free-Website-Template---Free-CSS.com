@@ -4,11 +4,26 @@
 	/* box-sizing: border-box; */
 	font-family: "Poppins", sans-serif;
 }
+.hamburger{
+	cursor: pointer;
+	background: #000;
+	padding: .7em;
+	border: 1px solid #ffffff;
+	display: none;
+}
+.bars{
+	background: #ffffff;
+	width: 40px;
+	height: 5px;
+	margin-bottom: 3px;
+	display: block;
+	border-radius: 5px;
+}
 .logo {
 	font-family: "Rufina", serif;
 }
-.over-layer{
-	background: linear-gradient(to top right, #2a2d54, #121212);
-	opacity: .4;
-	z-index: -1;
+.form{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+@media (width <= 767px){}
+@media (767px < width <= 1023px){}
