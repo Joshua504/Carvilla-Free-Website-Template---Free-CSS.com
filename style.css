@@ -1,20 +1,20 @@
 * {
-	/* padding: 0;
-	margin: 0; */
-	/* box-sizing: border-box; */
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
 .hamburger{
 	cursor: pointer;
 	background: #000;
-	padding: .7em;
+	padding: .5em;
 	border: 1px solid #ffffff;
 	display: none;
 }
 .bars{
 	background: #ffffff;
-	width: 40px;
-	height: 5px;
+	width: 35px;
+	height: 3px;
 	margin-bottom: 3px;
 	display: block;
 	border-radius: 5px;
@@ -25,5 +25,34 @@
 .form{
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-@media (width <= 767px){}
+@media (width <= 767px){
+	nav{
+		flex-direction: column;
+		top: 0em;
+		padding: 0em;
+	}
+	.link-con{
+		position: fixed;
+		background: #000;
+		flex-direction: column;
+		top: 15em;
+		left: 0;
+		width: 100%;
+		padding: 2em 1em ;
+		gap: 1em;
+		align-items: baseline;
+	}
+	main{
+		display: none;
+	}
+	.logo-con{
+		justify-content: space-between;
+		width: 100%;
+		background: #000;
+		padding: 1.5em 1em;
+	}
+	.hamburger{
+		display: block;
+	}
+}
 @media (767px < width <= 1023px){}
